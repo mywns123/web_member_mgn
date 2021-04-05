@@ -28,7 +28,7 @@ public class MemberDelList extends HttpServlet {
 		
 		service.DeleteMember(m);
 		
-		request.getRequestDispatcher("memberList.jsp").forward(request, response);
+		request.getRequestDispatcher("memberList").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

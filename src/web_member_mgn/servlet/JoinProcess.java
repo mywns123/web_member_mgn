@@ -31,14 +31,16 @@ public class JoinProcess extends HttpServlet {
 		service.InsertMember(member);
 		
 		HttpSession session = request.getSession();
-		System.out.println("session :" + session);
-//		if() {
-//		response.sendRedirect("memberList");
-//			request.getRequestDispatcher("member_List.jsp").forward(request, response);
-//		}else {
-		request.getRequestDispatcher("main.jsp").forward(request, response);
-////		response.sendRedirect("main.jsp");
+		Member mem =(Member)session.getAttribute("mem");
+		String s =mem.getId();
+		System.out.println("s :"+s);
+//		if(mem.getId().equals("admin")) {
+////		response.sendRedirect("memberList");
+//			request.getRequestDispatcher("memberList").forward(request, response);
 //		}
+		request.getRequestDispatcher("loginForm.jsp").forward(request, response);
+////		response.sendRedirect("main.jsp");
+		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

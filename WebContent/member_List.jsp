@@ -18,6 +18,7 @@
 			<td>성별 </td>
 			<td>이메일주소</td>
 			<td>비고</td>
+			<td></td>			
 		</tr>
 		</thead>	
 	<tbody>
@@ -28,13 +29,13 @@
 			<td>${member.age}</td>
 			<td>${member.gender} </td>
 			<td>${member.email}</td>
-			<td colspan="1"><a href="memberDelList">삭제</a></td>
+			<td ><a href="memberDelList?id=${member.id}">삭제</a></td>
+			<td><a href="memberUpdateList.jsp?id=${member.id}&name=${member.name}&age=${member.age}&email=${member.email}">수정하기</a></td>	
 		</tr>		
 	</c:forEach>
 	</tbody>
 	<tfoot>
-	<td colspan="3"><a href="joinForm.jsp">추가하기</a></td>
-	<td colspan="3"><a href="memberUpdateList.jsp">수정하기</a></td>	
+	<td colspan="3"><a href="joinForm.jsp">추가하기</a></td>	
 	</tfoot>	
 	</table>	
 </body>

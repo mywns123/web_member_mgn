@@ -1,10 +1,10 @@
 {
 	"folders": {},
 	"connections": {
-		"mysql5-1789fa1bbb3-66468322146ba6ef": {
+		"mysql5-178a16b0772-2317ee22f6b6f1": {
 			"provider": "mysql",
 			"driver": "mysql5",
-			"name": "native_jdbc",
+			"name": "native_jdbc 2",
 			"save-password": true,
 			"show-system-objects": true,
 			"read-only": false,
