@@ -38,7 +38,8 @@ public class JoinProcess extends HttpServlet {
 ////		response.sendRedirect("memberList");
 //			request.getRequestDispatcher("memberList").forward(request, response);
 //		}
-		request.getRequestDispatcher("loginForm.jsp").forward(request, response);
+//		request.getRequestDispatcher("loginForm.jsp").forward(request, response);
+		request.getRequestDispatcher("main.jsp").forward(request, response);
 ////		response.sendRedirect("main.jsp");
 		
 	}
