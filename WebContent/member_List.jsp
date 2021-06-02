@@ -35,7 +35,9 @@
 	</c:forEach>
 	</tbody>
 	<tfoot>
-	<td colspan="3"><a href="joinForm.jsp">추가하기</a></td>	
+	<tr>
+	<td><a href="joinForm.jsp">추가하기</a></td>	
+	</tr>
 	</tfoot>	
 	</table>	
 </body>
